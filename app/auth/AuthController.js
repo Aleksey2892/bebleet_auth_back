@@ -131,7 +131,7 @@ class AuthController {
 
     if (!token) {
       return res
-        .status(HttpCodes.BAD_REQUEST)
+        .status(HttpCodes.FORBIDDEN)
         .json({ error: `You don't have access"` })
     }
 
